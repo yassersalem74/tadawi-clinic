@@ -29,6 +29,8 @@ body {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+  height: 100vh;
+
 }
 
 .left-side {
