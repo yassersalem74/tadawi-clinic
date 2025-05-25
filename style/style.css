@@ -1,0 +1,265 @@
+/* variables  */
+:root {
+  --primary-color: #0f58a4;
+  --light-blue-color: #a4ceff;
+  --red-color: #d12e2e;
+  --secondary-color: #70757b;
+  --right-side: #1057a5;
+  --odd-color: #e7eef6;
+  --even-color: white;
+  --pending-color: #f4f3b480;
+  --approved-color: #b1eec480;
+  --refused-color: #ffb9b980;
+  --partial-approve-color: #77b2f780;
+  --danger-color: #d70505;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+.content {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+  /* height: 96vh; */
+}
+
+.left-side {
+  /* width: 70%; */
+  grid-column: 1/5;
+  background-image: url("/images/left-back.png");
+}
+
+.right-side {
+  background-image: url("/images/right-back.png");
+  /* width: 30%; */
+  grid-column: 5/7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 56px 8px 0px 8px;
+}
+
+@media screen and (max-width: 1070px) {
+  /* from 0px to 768px */
+
+  .left-side {
+    /* width: 70%; */
+    grid-column: 1/7;
+  }
+
+  .right-side {
+    /* width: 30%; */
+    grid-column: 1/7;
+    flex-direction: row !important;
+  }
+  .doctor-board {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .doctor-board {
+    flex-direction: column;
+  }
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.doctor-board {
+  width: 90%;
+}
+
+/* time header */
+.date {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin: 4px 0px 18px 0px;
+  flex-wrap: wrap;
+}
+
+.time,
+.day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: var(--secondary-color);
+  font-size: 22px;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+}
+
+.icon img {
+  width: 100%;
+}
+/* time header */
+
+/* doctor-board */
+
+.doctor-board {
+  display: flex;
+  justify-content: space-between;
+    border-bottom: 2px solid #C4E1EF;
+  /* border-top: 2px solid #C4E1EF;
+  border-bottom: 2px solid #C4E1EF;
+  border-left: none;
+  border-right: none;
+  background-color: white; */
+  padding: 6px 0px;
+  margin: 8px 0px;
+}
+
+.doctor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.doctor-name {
+  padding: 2px 8px 2px 18px;
+}
+.doctor-img {
+  width: 90px;
+  height: 78px;
+}
+
+.doctor-img img {
+  width: 100%;
+}
+.doctor-image-on-frame {
+  position: relative;
+  top: -104%;
+  left: 8px;
+  width: 75% !important;
+}
+
+.doctor-image-on-frame-right {
+    position: relative;
+    top: 5%;
+    left: 15px;
+    width: 64px !important;
+}
+
+.token {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.token-number {
+  display: flex;
+  gap: 32px;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.token-line {
+  color: var(--light-blue-color);
+}
+
+.token-header {
+  background-color: #29b07e;
+  color: white;
+  padding: 0px 8px;
+  border-radius: 16px;
+}
+
+.clinic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: var(--light-blue-color);
+  /* padding: 0px 8px; */
+}
+
+.clinic-img {
+  width: 90px;
+  height: 78px;
+  position: relative;
+}
+.doctor-image-on-frame-right {
+  position: absolute;
+}
+.clinic-img img {
+  width: 100%;
+}
+
+.clinic-name {
+  background-color: var(--primary-color);
+  padding: 5px 32px 4px 22px;
+  border-radius: 8px;
+  margin-right: -19px;
+}
+
+/*  right side */
+
+.right-side {
+  background-color: var(--right-side);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 56px 8px 0px 8px;
+}
+
+.logo-image {
+  display: flex;
+  justify-content: center;
+}
+.logo-image img {
+  width: 70%;
+}
+
+.services {
+  display: flex;
+  gap: 8px;
+  padding: 24px 0px 12px;
+}
+.services img {
+  width: 75px;
+  height: 75px;
+}
+
+.sponsors img {
+  width: 100%;
+  height: 85%;
+}
+
+/* .clinic-img-container {
+  position: relative;
+}
+
+.doctor-image-on-frame-right {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80% !important;
+  max-width: 200px;
+} */
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 16px 0;
+}
+.footer-image{
+    width: 400px;
+}
+.footer img{
+ width: 100%;
+}
