@@ -13,6 +13,11 @@
   --partial-approve-color: #77b2f780;
   --danger-color: #d70505;
 }
+html {
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: "Cairo", sans-serif;
@@ -45,6 +50,12 @@ body {
 @media screen and (max-width: 1070px) {
   /* from 0px to 768px */
 
+  html {
+    overflow-y: auto !important;
+    margin: 0;
+    padding: 0;
+  }
+
   .left-side {
     /* width: 70%; */
     grid-column: 1/7;
@@ -64,6 +75,12 @@ body {
 @media screen and (max-width: 720px) {
   .doctor-board {
     flex-direction: column;
+  }
+
+  html {
+    overflow-y: auto !important;
+    margin: 0;
+    padding: 0;
   }
   .sponsors {
     height: 100% !important;
@@ -97,7 +114,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 32px;
-  margin: 4px 0px 18px 0px;
+  margin: 4px 0px 4px 0px;
   flex-wrap: wrap;
 }
 
@@ -133,7 +150,7 @@ body {
   border-right: none;
   background-color: white; */
   padding: 6px 0px;
-  margin: 8px 0px;
+  /* margin: 8px 0px; */
 }
 
 .doctor {
@@ -218,7 +235,7 @@ body {
 
 .clinic-name {
   background-color: var(--primary-color);
-padding: 6px 52px 6px 72px;
+  padding: 6px 52px 6px 72px;
   border-radius: 8px;
   /* margin-right: -19px; */
   margin-right: -60px;
@@ -278,10 +295,10 @@ padding: 6px 52px 6px 72px;
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: 16px 0;
+  margin: 0;
 }
 .footer-image {
-  width: 400px;
+  width: 300px;
 }
 .footer img {
   width: 100%;
