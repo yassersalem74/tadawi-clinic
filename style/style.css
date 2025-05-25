@@ -199,7 +199,7 @@ body {
 
 .clinic-name {
   background-color: var(--primary-color);
-  padding: 5px 32px 4px 22px;
+  padding: 5px 22px 4px 72px;
   border-radius: 8px;
   margin-right: -19px;
 }
