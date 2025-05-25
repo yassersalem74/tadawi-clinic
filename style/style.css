@@ -16,13 +16,13 @@
 
 body {
   font-family: "Cairo", sans-serif;
+  margin: 0 !important;
 }
 
 .content {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
-  /* height: 96vh; */
 }
 
 .left-side {
@@ -63,6 +63,10 @@ body {
 @media screen and (max-width: 720px) {
   .doctor-board {
     flex-direction: column;
+  }
+  .sponsors {
+    height: 100% !important;
+    width: 100% !important;
   }
 }
 
@@ -109,7 +113,7 @@ body {
 .doctor-board {
   display: flex;
   justify-content: space-between;
-    border-bottom: 2px solid #C4E1EF;
+  border-bottom: 2px solid #c4e1ef;
   /* border-top: 2px solid #C4E1EF;
   border-bottom: 2px solid #C4E1EF;
   border-left: none;
@@ -145,10 +149,10 @@ body {
 }
 
 .doctor-image-on-frame-right {
-    position: relative;
-    top: 5%;
-    left: 15px;
-    width: 64px !important;
+  position: relative;
+  top: 5%;
+  left: 15px;
+  width: 64px !important;
 }
 
 .token {
@@ -234,7 +238,11 @@ body {
 
 .sponsors img {
   width: 100%;
-  height: 85%;
+  height: 100%;
+}
+
+.sponsors {
+  height: 350px;
 }
 
 /* .clinic-img-container {
@@ -250,16 +258,15 @@ body {
   max-width: 200px;
 } */
 
-
-.footer{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 16px 0;
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 16px 0;
 }
-.footer-image{
-    width: 400px;
+.footer-image {
+  width: 400px;
 }
-.footer img{
- width: 100%;
+.footer img {
+  width: 100%;
 }
