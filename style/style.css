@@ -297,7 +297,7 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: 0;
+  margin: 18px 0px;
 }
 .footer-image {
   width: 300px;
